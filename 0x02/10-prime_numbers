@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+"""a  function named find_primes(n) that
+Takes an integer n as input
+Returns a list of all prime numbers from 2 to n
+A prime number is only divisible by 1 and itself"""
+
+def find_primes(n):
+    primes = []
+    for num in range(2, n ):
+        is_prime = True
+        for i in range(2, int(num ** 0.5) + 1):
+            if num % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(num)
+    return primes
+
+result = find_primes(10)
+print(result)  # Output: [2, 3, 5, 7]
