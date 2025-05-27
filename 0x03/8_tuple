@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+"""creating a tuple in python"""
+t = ()
+print(type(t))
+
+t1 = 1,
+print(type(t1))

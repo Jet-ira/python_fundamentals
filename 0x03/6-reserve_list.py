@@ -5,8 +5,7 @@ Returns the list reversed, but without using the .reverse() method"""
 
 def reverse_list(lst):
 
-    return reverse_list
+    return lst[-1]
 result = reverse_list([1, 2, 3, 4, 5])
-
 
 print(result)
